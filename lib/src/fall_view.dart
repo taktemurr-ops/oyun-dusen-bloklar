@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:studio_core/core/strings.dart';
 import 'package:studio_core/app/arcade_stage.dart';
 import 'package:studio_core/app/game_api.dart';
 import 'package:studio_core/app/play_kit.dart';
@@ -138,7 +139,7 @@ Widget buildFallStage(PlayContext ctx, FallLevel level) => ArcadeStage(
       paint: paintFall,
       sound: fallSound,
       boosterIcon: Icons.vertical_align_bottom,
-      boosterLabel: (l) => l == 'tr' ? 'Alt 2 sırayı sil' : 'Clear 2 rows',
+      boosterLabel: (l) => Strings.tx(l, 'Alt 2 sırayı sil', 'Clear 2 rows'),
       howTo: const [
         'Sürükle: kaydır · Dokun: döndür · Aşağı fırlat: bırak · Yukarı fırlat: tut',
         'Drag: move · Tap: rotate · Flick down: drop · Flick up: hold',
@@ -170,7 +171,7 @@ Widget buildFallStage(PlayContext ctx, FallLevel level) => ArcadeStage(
       'खींचें: सरकाएँ · छुएँ: घुमाएँ · नीचे: गिराएँ · ऊपर: रखें',
       'টানুন: সরান · ছুঁন: ঘোরান · নিচে: ফেলুন · ওপরে: রাখুন',
       'Seret: geser · Ketuk: putar · Ke bawah: jatuhkan · Ke atas: simpan',
-      'Seret: geser · Ketik: putar · Ke bawah: jatuhkan · Ke atas: simpan',
+      'Seret: leret · Ketik: putar · Ke bawah: jatuhkan · Ke atas: simpan',
       'ลาก: เลื่อน · แตะ: หมุน · ปัดลง: ปล่อย · ปัดขึ้น: เก็บไว้',
       'Kéo: di chuyển · Chạm: xoay · Vuốt xuống: thả · Vuốt lên: giữ',
       'I-drag: galaw · I-tap: ikot · Pababa: ihulog · Pataas: itabi',
