@@ -82,7 +82,7 @@ final dusenBloklarConfig = GameConfig(
       'Đặt mảnh, xóa hàng!',
       'Ilagay ang mga piraso, linisin ang mga hanay!',
     ],
-  seedColor: const Color(0xFF00897B),
+  seedColor: const Color(0xFF5B4FA8),
   icon: Icons.view_agenda_rounded,
   rules: FallRules(),
   buildPlay: (ctx) => buildFallStage(ctx, (ctx.generated as GeneratedLevel<FallLevel>).puzzle),
